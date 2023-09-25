@@ -1,0 +1,181 @@
+.body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0fr;
+    position: relative;
+}
+
+.body_page_1{
+    display: grid;
+    grid-template-columns: 750px 1fr;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+}
+
+.body_page_left_1{
+    position: relative;
+    display: block;
+    height: 880px;
+}
+
+.avatar_button{
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(173, 165, 165);
+    margin-top: 250px;
+    margin-left: 350px;
+    margin-right: 0px;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 280px;
+    height: 290px;
+    transition: width 0.5s,
+                height 0.7s;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 5px 5px 10px rgb(243, 242, 242);
+    opacity: 1;
+}
+
+.avatar:hover{
+    cursor: pointer;
+    width: 290px;
+    height: 300px;
+}
+
+
+
+.body_page_right_1{
+    display: block;
+}
+
+
+.info{
+    margin-top: 280px;
+    margin-left: 30px;
+}
+
+.career{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.career:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.name{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    transition: opacity 0.5s,
+                letter-spacing 1s;
+}
+
+.name:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.about_me{
+    font-size: 17px;
+    width: 650px;
+    line-height: 23px;
+    transition: line-height 0.5s;
+}
+
+.about_me:hover{
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.AARHUSTECH{
+    text-decoration: none;
+    color: rgb(173, 44, 44);
+}
+
+
+.buttons_body_page_1{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.download_cv{
+    width: 130px;
+    height: 40px;
+    border-width: 2px;
+    border-color: rgb(93, 158, 255);
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    transition: opacity 0.5s;
+}
+
+.download_cv:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.contact_button{
+    width: 120px;
+    height: 40px;
+    border-width: 2px;
+    border-color: rgb(160, 173, 192);
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    transition: opacity 0.5s;
+}
+
+.contact_button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@media(max-width:1600px){
+
+    .body{
+        height: 1000px;
+    }
+
+    .body_page_1{
+        display: grid;
+        grid-template-columns: 550px 1fr;
+        
+    }
+
+    .avatar_button{
+        margin-top: 140px;
+        margin-left: 150px;
+        margin-right: 50px;
+    }
+
+    .info{
+        margin-top: 180px;
+        margin-left: 30px;
+    }
+    
+    .buttons_body_page_1{
+        margin-left: 50px;
+    }
+}
